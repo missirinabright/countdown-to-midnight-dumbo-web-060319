@@ -11,6 +11,7 @@ end
 
 
 def countdown_with_sleep(num)
+  time = Benchmark.measure do
   sleep(5.seconds)
   while num > 0
   puts "#{num} SECOND(S)!"
